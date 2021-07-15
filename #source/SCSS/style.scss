@@ -1,0 +1,442 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing:border-box;box-sizing: border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%; width: 100%; font-size: 100%; line-height: 1; font-size: 14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;}
+/*---------------*/
+
+//font Source Serif Pro (regular)
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+//Colors
+$white : #FFFFFF !global;
+$red :#FE4546 !global;
+$blue : #1148C0 !global;
+
+//Styles
+
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color:$white;
+}
+
+.wrapper{
+	display: flex;
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	flex-direction:column;
+}
+.header{
+	position: relative;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction:column;
+	background-image: url("/img/bg7.jpg");
+	filter: brightness(-100);
+	// background-size: 100% 100%;
+	background-size: cover;
+	// background-attachment: fixed;
+	background-position: bottom;
+	padding-top:25px;
+	height: 60vh;
+
+.nav{
+	margin: 30px auto;
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:center;
+	a{
+		cursor: pointer;
+		text-decoration: none;
+		color:$white;
+	}
+
+	.nav__flag{
+		width: 130px;
+		height: 40px;
+		background-size: 130px 40px;
+		background-image: url("/img/flag.svg");
+		position: absolute;
+		left:0;
+	}
+
+	.nav__buttons{
+		margin: 0 auto;
+		padding: 5px;
+		display: flex;
+		align-items: center;
+
+		.nav__logo{
+			border:2px solid $white;
+			padding: 10px 20px;
+			margin-left: 150px;
+			margin-right: 150px;
+			font-size: 20px;
+			text-shadow: 0 0 10px rgba(0,0,0,1);
+			text-transform: uppercase;
+		}
+
+		.nav__button{
+			font-size: 18px;
+			padding: 5px 15px;
+			margin-left: 40px;
+			text-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+	}
+}
+	.phrase{
+		display: flex;
+		justify-content:center;
+		align-content:center;
+		flex-direction:column;
+		// margin: 170px auto;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color:$white;
+		padding-bottom: 10px 20px;
+		text-shadow: 0 0 15px rgba(0,0,0,.4);
+		transform: translateX(50%);
+		transform: translateY(100%);
+
+		.phrase__iceland{margin: 0 auto;font-size: 90px; padding: 5px;}
+		.phrase__tour{margin: 0 auto; font-size: 23px; padding: 5px; line-height: 30px;}
+	}
+
+	.inf{
+		text-shadow: 0 0 15px rgba(0,0,0,.1);
+		padding: 5px;
+		display: flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		background-color:$white;
+		color:rgba(0,0,0,.4);
+		font-size: 18px;
+		margin: auto;
+		position: absolute;
+		bottom: -30px;
+		left:0;
+		right:0;
+		width: 41%;
+		box-shadow: 0px 5px 12px rgba(0,0,0,.1);
+		.inf__block{
+			padding: 15px 20px;
+			display: flex;
+			justify-content:center;
+			align-items:center;
+		}
+		.inf__range{
+			border-left: 1px solid rgba(0,0,0,.4);
+		}
+	}
+}
+
+.content{
+width: 100%;
+margin: 0 auto;
+
+.wIceland{
+	display: flex;
+	flex-direction:column;
+	margin: 100px auto;
+	flex-wrap:wrap;
+.wIceland__text_img{
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-content:start;
+	padding: 20px 100px;
+	flex-wrap:wrap;
+
+}
+	.wIceland__texts, .wIceland__img{
+		width: 50%;
+		padding: 10px;
+	}
+	.wIceland__texts{
+		padding: 50px 100px;
+	}
+	.wIceland__text{
+		font-size: 18px;
+		padding: 10px 10px;
+		line-height: 24px;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+}
+.logo{
+	text-transform: uppercase;
+	margin: 0 auto;
+	border:1px solid #000;
+			padding: 5px 20px;
+			font-size: 16px;
+}
+.blockName{
+	text-transform: uppercase;
+	margin: 20px auto;
+	font-size: 30px;
+	padding: 20px;
+	letter-spacing: 2px;
+}
+}
+.wwe{
+	width: 100%;
+	display: flex;
+	flex-direction:column;
+	background-image: url("/img/bg7.jpg");
+	filter: brightness(100%);
+	-webkit-filter: brightness(100%);
+	background-size: cover;
+	background-position: bottom;
+	color:$white;
+	padding: 100px 50px;
+	.wwe__bg{
+
+	}
+	.logo{
+		border-color: $white;
+	}
+	.wwe__answers{
+		width: 100%;
+		display: flex;
+		flex-direction:row;
+		align-content:start;
+		justify-content:space-between;
+		padding: 50px;
+		flex-wrap:wrap;
+
+		.answer{
+			padding: 10px 80px;
+			width: 25%;
+			line-height: 20px;
+
+			.answer__heading{
+				font-size: 30px;
+				line-height: 30px;
+			}
+			.answer__text{
+				margin-top: 25px;
+				font-size: 18px;
+				line-height: 25px;
+			}
+		}
+	}
+}
+.tripWay{
+	width: 100%;
+	display: flex;
+	flex-direction:column;
+	margin-top: 20px;
+	padding: 70px 10px;
+	.tripWay__slider{
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		flex-direction:row-reverse;
+		justify-content:center;
+		align-items:center;
+			.tripWay__btn{
+				font-size: 32px;
+				background: none;
+				padding: 150px 70px;
+				// width: 25%;
+				cursor: pointer;
+			}
+		.tripWay__img, .slider__text{
+			width: 25%;
+		}
+		.tripWay__img{
+			height: 550px;
+			padding: 25px;
+		}
+		.slider__text{
+			padding: 25px;
+			display: flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+
+			.tripWay__textHeading{
+				font-size: 24px;
+				padding: 5px;
+			}
+			.tripWay__text{
+				margin-top: 10px;
+				padding: 5px 10px;
+				font-size: 18px;
+				line-height: 22px;
+			}
+			.slider__count{
+				display: flex;
+				flex-direction:column;
+				position: relative;
+				width: 25%;
+				padding: 20px 0px;
+				font-size: 14px;
+				margin-top: 40px;
+				.currentSlide{position:absolute; top:0; left:0; width: 100%; text-align:left;}
+				.slideCount{position:absolute; bottom:0; right:0px; width: 100%;text-align: right;}
+				.line{
+					width: 100%;
+					border:1px solid black;
+				}
+			}
+		}
+
+		}
+	}
+
+.booking{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+
+		.booking__header{
+			margin-top: 20px;
+			color:$white;
+			padding: 100px 50px;
+				display: flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+				width: 100%;
+				background-image: url("/img/bg11.jpg");
+				background-size: cover;
+				background-position: center;
+				-webkit-filter:brightness(90%);
+				filter:brightness(90%);
+				.logo{
+					border-color: $white;
+				}
+
+				.booking__mainInfo{
+					font-size: 24px;
+					margin-top: -20px;
+				}
+
+				.booking__button{
+					text-transform: uppercase;
+					font-size: 16px;
+					padding: 16px 32px;
+					background-color: $blue;
+					color:$white;
+					margin-top: 30px;	
+				}
+		}
+
+.booking__items{
+	margin-top: 60px;
+			
+			padding: 20px 50px;
+}
+.item{
+	margin: 0px auto;
+width: 70%;
+padding: 10px;
+transition:.5s all;
+
+.item__title{
+	display: flex;
+	padding: 10px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 22px;
+	align-items:center;
+	justify-content:space-between;
+	color:#000;
+
+		.icon{
+			position: relative;
+			width: 14px;
+		}
+		.icon::before, .icon::after{
+			content: "";
+			position: absolute;
+			width: 14px;
+			height: 3px;
+			background-color: #ababab;
+			top: -1.5px;
+		}
+		.icon::after{
+			transform:rotate(90deg);
+			transition: .5s all; 
+		}
+}
+
+
+
+.item__text{
+	margin: 6px 0;
+	opacity: 0;
+	height: 0px;
+}
+
+
+
+}
+
+.item:target .item__text{
+	opacity: 1;
+	height: auto;
+	line-height: 22px;
+	font-size: 16px;
+	width: 100%;
+	padding: 0px 10px;
+	transition:.5s all;
+}
+.item:target .icon::after{
+	transform:rotate(0deg);
+}
+
+}
+
+.living{
+		width: 100%;
+	display: flex;
+	flex-direction:column;
+	margin-top: 20px;
+	padding: 70px 10px;
+
+	.living__block{
+		display: flex;
+		flex-direction:row-reverse;
+		justify-content:center;
+		align-items:center;
+	}
+	.living__img{
+		width: 35%;
+		padding: 25px;
+		height: 400px;
+
+	}
+	.living__texts{
+		width: 20%;
+		padding: 25px;
+		.living__text{
+			padding: 5px;
+			margin-top: 5px;
+			font-size: 16px;
+			line-height: 20px;
+
+		}
+	}
+
+}
